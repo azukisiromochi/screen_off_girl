@@ -13,7 +13,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Settings UI')),
+      appBar: AppBar(
+        title: const Text('Settings UI'),
+        flexibleSpace: Image(
+          image: AssetImage('assets/appbar.jpg'),
+          fit: BoxFit.cover,
+        ),
+        backgroundColor: Colors.transparent,
+      ),
       body: buildSettingsList(),
     );
   }
